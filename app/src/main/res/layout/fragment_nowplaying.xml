@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rlt3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/rlt4"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/viewAvartar"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:civ_border_width="0.5dp"
+            android:layout_centerInParent="true"
+            app:civ_border_color="#FF000000"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlt4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/rlt5">
+        <!--android:avatarsong1="#9e18e6"-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="..."
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+           />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlt5"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+
+        >
+        <ImageButton
+            android:id="@+id/btnCong"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/changebackground_btn_cong"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            />
+
+        <ImageButton
+            android:id="@+id/btnTaixuong"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/changebackground_btn_taixuong"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@+id/btnCong"
+
+            />
+
+        <ImageButton
+            android:id="@+id/btnChiaSe"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/changebackground_btn_chiase"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@+id/btnTaixuong"
+            android:layout_marginRight="30dp"
+            />
+
+
+
+
+
+        <ImageButton
+            android:id="@+id/btnVideo"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/changebackground_btn_video"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/btnCong"
+
+
+            />
+
+        <ImageButton
+            android:id="@+id/btnBaCham"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/changebackground_btn_bacham"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/btnVideo"
+            android:layout_marginLeft="30dp"
+
+
+
+
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

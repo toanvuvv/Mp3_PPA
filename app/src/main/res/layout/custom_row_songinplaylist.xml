@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="blocksDescendants">
+    <RelativeLayout
+
+        android:id="@+id/layoutSpinner"
+        android:layout_alignParentRight="true"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp">
+
+        <com.example.baitap.mp3player.Custom.NoDefaultSpinner
+            android:id="@+id/spinner"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:duplicateParentState="true"
+            android:layout_alignParentRight="true"
+            local:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+            local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+
+            >
+        </com.example.baitap.mp3player.Custom.NoDefaultSpinner>
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:id="@+id/lnLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/layoutSpinner"
+        >
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/tvTenBaiHat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Duyên phận"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvCaSi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:text="Jang Mi"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

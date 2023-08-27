@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <RelativeLayout
+        android:id="@+id/layoutSpinner"
+        android:layout_alignParentRight="true"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:duplicateParentState="true"
+
+            android:layout_alignParentRight="true"
+            >
+        </CheckBox>
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:id="@+id/lnLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/layoutSpinner"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        >
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/tvTenBaiHat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Duyên phận"
+            android:textColor="@color/purple"
+            android:textSize="16dp"
+            />
+
+        <TextView
+            android:id="@+id/tvCaSi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:text="Jang Mi"
+            android:textColor="@color/purple"
+            android:textSize="12dp"
+
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

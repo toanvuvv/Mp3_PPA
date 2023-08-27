@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_playallsonginlist"
+        android:icon="@drawable/ic_play_circle_outline_black_24dp"
+        app:showAsAction="ifRoom"
+        android:title="@string/playall"/>
+
+
+    <item
+        android:id="@+id/menu_addsongtoplaylist"
+        android:icon="@drawable/ic_add_white_24dp"
+        app:showAsAction="ifRoom"
+        android:title="@string/add"/>
+
+</menu>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:local="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_tenbaihat_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Duyên phận"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_casi_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Jang Mi"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            />
+
+</LinearLayout>

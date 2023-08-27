@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/blue111"
+        android:text="Ứng dụng nghe nhạc thông minh"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="40px"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:background="@color/orange"
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/dbTextView"
+            android:textSize="10dp"
+
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:id="@+id/texxt"
+            android:textSize="10dp"
+            android:layout_toRightOf="@+id/dbTextView"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/dbFractionTextView"
+            android:textSize="10dp"
+            android:layout_toRightOf="@+id/texxt"
+            android:layout_centerVertical="true"
+            />
+
+        <Switch
+            android:id="@+id/switch_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/dbFractionTextView"
+            android:layout_centerVertical="true"
+            />
+
+        <view
+            android:id="@+id/bar_level_drawable_view"
+            class="com.example.baitap.mp3player.Utils.BarLevelDrawable"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="false"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/switch_play">
+
+        </view>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/rltlayout">
+
+    </RelativeLayout>
+
+
+</LinearLayout>
